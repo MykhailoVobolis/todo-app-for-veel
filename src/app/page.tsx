@@ -1,7 +1,9 @@
+import TodoList from '@/components/todo-list';
+
 export default function Home() {
   return (
-    <main>
-      <h1>Home page</h1>
+    <main className="min-h-screen flex flex-col justify-center items-center">
+      <TodoList />
     </main>
   );
 }
