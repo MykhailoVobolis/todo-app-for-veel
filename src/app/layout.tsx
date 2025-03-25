@@ -5,7 +5,6 @@ import Providers from '@/components/providers';
 
 import './globals.css';
 
-// Додавання title та description проєкту
 export const metadata: Metadata = {
   title: 'Todo App',
   description:

@@ -23,11 +23,11 @@ export default function TodoInput({ addTodo }: TodoInputProps) {
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
         placeholder="Add new todo"
-        className="border p-2 w-96 rounded"
+        className=" px-2 py-1 w-96 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black"
       />
       <button
         onClick={handleAddTodo}
-        className="ml-2 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded "
+        className="ml-2 px-4 py-2 bg-black hover:bg-gray-800 text-white rounded-lg "
       >
         Add Todo
       </button>

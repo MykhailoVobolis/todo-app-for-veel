@@ -1,3 +1,3 @@
 export default function Loader() {
-  return <div>I`m loading...</div>;
+  return <div className="flex justify-center py-60">I`m loading...</div>;
 }
