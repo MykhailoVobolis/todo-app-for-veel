@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Todo App
+
+[**Live Page**](https://todo-app-for-veel.vercel.app) - Check out the working version of the project.
+
+## Overview
+
+A simple Todo application built with **Next.js**, **React Query**, and **Tailwind CSS**. This app allows you to add, remove, and view your tasks with real-time updates using an optimized caching mechanism.
+
+## Features
+
+- Add new todos
+- Delete todos
+- Optimistic updates with React Query
+- UI with Tailwind CSS
+
+## Technologies Used
+
+- **Next.js**: React framework for server-side rendering and static site generation
+- **React Query**: Data fetching and caching library for React
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **TypeScript**: Superset of JavaScript with static types
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+- **Node.js**: Make sure you have Node.js installed. You can download it from [here](https://nodejs.org/).
+
+- **npm**: npm comes installed with Node.js. If you prefer, you can also use **Yarn** as an alternative package manager.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/MykhailoVobolis/todo-app-for-veel.git
+   cd todo-app-for-veel
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+   or, if you are using Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+### Running the App
+
+After installing the dependencies, you can start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or with Yarn:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Your app will be available at [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Folder Structure
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+/src
+  /app             # Main app page and others
+  /components      # Reusable components (TodoList, TodoInput, TodoItem, etc.)
+  /hooks           # Custom hooks (useTodos, etc.)
+  /lib             # API calls, TypeScript types and other utilities
+```
